@@ -1,0 +1,5 @@
+# cat=basic/enable; type=string; label=Secret key:Secret string to verify connection right, to be defined also in Pydio
+secretKey = 
+
+# cat=basic/enable; type=string; label=Path to Pydio installation:Subdirectory name (on this website's base URL) where Pydio is installed
+pathToPydio = pydio

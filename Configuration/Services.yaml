@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  FKU\FkuPydioAuthentication\:
+    resource: '../Classes/*'
+
+  FKU\FkuPydioAuthentication\EventListener\PydioAuthentication:
+    tags:
+      - name: event.listener
+        identifier: 'fku-pydio-authentication/pydioConnect'
+        method: 'connect'
+        event: TYPO3\CMS\FrontendLogin\Event\LoginConfirmedEvent

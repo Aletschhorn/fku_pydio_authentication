@@ -17,7 +17,7 @@ $EM_CONF[$_EXTKEY] = [
 	'author_email' => 'daniel.widmer@fku.ch',
 	'state' => 'stable',
 	'clearCacheOnLoad' => 0,
-	'version' => '1.0.0',
+	'version' => '1.1.0',
 	'constraints' => [
 		'depends' => [
 			'typo3' => '8.7.0 - 10.4.99',
@@ -46,5 +46,8 @@ $EM_CONF[$_EXTKEY] = [
  * Removed all frontend stuff like controller, templates, typoscript
  * Deleted ext_lobalconf and ext_tables
  *
+ * Version 1.1.0
+ * -------------
+ * Logout feature created
  *
  */

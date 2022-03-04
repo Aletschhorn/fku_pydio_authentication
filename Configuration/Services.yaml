@@ -13,3 +13,7 @@ services:
         identifier: 'fku-pydio-authentication/pydioConnect'
         method: 'connect'
         event: TYPO3\CMS\FrontendLogin\Event\LoginConfirmedEvent
+      - name: event.listener
+        identifier: 'fku-pydio-authentication/pydioConnect'
+        method: 'disconnect'
+        event: TYPO3\CMS\FrontendLogin\Event\LogoutConfirmedEvent
